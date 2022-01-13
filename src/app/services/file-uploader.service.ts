@@ -12,6 +12,7 @@ export class FileUploaderService {
   ) { }
   
   public pushFileToStorage(file: File): Observable<HttpEvent<{}>> {
+    console.log(file)
     const data: FormData = new FormData();
     data.append('file', file);
     const newRequest = new HttpRequest('POST', 'https://udeyou-api.herokuapp.com/uploadFile', data, {

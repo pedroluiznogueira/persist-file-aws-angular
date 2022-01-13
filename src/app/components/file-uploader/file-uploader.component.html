@@ -1,7 +1,7 @@
 <form>
     <div class="input-block">
         <label id="image-label" htmlFor="image">Upload File</label>
-        <input id="image" type="file" (change)="arquivoSelecionado($event)">    
+        <input id = "customFile" type="file" class="custom-file-input" id="customFile" (change)="arquivoSelecionado($event)" >    
     </div>
         <button type="submit" (click)="uploadArquivo()">Send File</button>
 </form>

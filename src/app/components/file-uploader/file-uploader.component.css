@@ -27,7 +27,7 @@ input-block {
 }
 
 input[type="file"] {
-    display: none;
+    background-color: #161B22;
 }
 
 .input-block #image-label, 
