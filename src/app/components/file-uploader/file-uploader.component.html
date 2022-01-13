@@ -1,1 +1,7 @@
-<p>file-uploader works!</p>
+<form>
+    <div class="input-block">
+        <label id="image-label" htmlFor="image">Upload File</label>
+        <input id="image" type="file" (change)="arquivoSelecionado($event)">    
+    </div>
+        <button type="submit" (click)="uploadArquivo()">Send File</button>
+</form>
