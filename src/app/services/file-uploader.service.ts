@@ -15,7 +15,7 @@ export class FileUploaderService {
     console.log(file)
     const data: FormData = new FormData();
     data.append('file', file);
-    const newRequest = new HttpRequest('POST', 'https://udeyou-api.herokuapp.com/uploadFile', data, {
+    const newRequest = new HttpRequest('POST', 'http://localhost:8080/bucket/push', data, {
       reportProgress: true,
       responseType: 'text'
     });
